@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<!-- SWIPER -->
+
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./scss/main.css">
+
+
+<style>
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: red;
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
+    }
+  </style>
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light start ">
+        <a class="navbar-brand" href="#">
+            <img src="/img/navbar-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto links">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">send a package <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">see the advertisments</a>
+            </li>
+        </ul>
+            <ul class="navbar-nav ml-auto links">
+            <li class="nav-item">
+              <a class="nav-link" href="#">register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">how does it work</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#!" class="nav-link nav-link-button">
+                    <i class="fas fa-piggy-bank"></i>
+                    <span>you travel ? make your trips profitable</span>
+                  </a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+<header class="header">
+
+
+  <div class="sending ">
+  
+  
+    <div class="sending__heading">To send a <span style="color: #ffc829;"> package</span> at <span style="color: #ffc829;"> Tunis</span></div>
+    <div class="sending__sub-heading">Send your parcels between individuals in France and worldwide</div>
+
+</div>
+
+<div class="row looking">
+  
+  <div class="looking__ride">I'm looking for a ride from</div>
+<div class="taker">
+  <input type="text" placeholder="indicate city or country" class="taker__inp">
+
+  <p class="taker__at">at</p>
+
+  <input type="text" placeholder="indicate city or country" class="taker__inp">
+</div>
+  <a href="#!" class="looking__link">LET'S GO</a>
+
+</div>
+
+
+<div class="rightside">
+
+<div class="rightside__text">Insurance included on all shipments with the</div>
+
+<div class="rightside__img">
+  <img src="/img/logoV2.png" alt="">
+</div>
+
+</div>
+
+
+<div class="talked">
+  <div class="talked__text">They talk about us:</div>
+
+<div class="brands">
+
+
+  <div class="brands__img">
+    <img src="/talked/bfm@2x.png" alt="">
+  </div>
+
+  <div class="brands__img">
+    <img src="/talked/Kobini.png" alt="">
+  </div>
+
+  <div class="brands__img">
+    <img src="/talked/femina@2x.png" alt="">
+  </div>
+
+  <div class="brands__img">
+    <img src="/talked/cosmopolition@2x.png" alt="">
+  </div>
+
+  <div class="brands__img">
+    <img src="/talked/Maddy.png" alt="">
+  </div>
+
+  <div class="brands__img">
+    <img src="/talked/Jeune Afrique.png" alt="">
+  </div>
+
+</div>
+
+
+</div>
+</header>
+
+
+<div class="departures">
+    <div class="container  ml-5">
+      
+      
+      
+      <div class="heading">
+        
+        <div class="heading__image"><img src="./img/departLogo@2x.png" alt=""></div>
+        <div class="heading__text">The next departures:</div>
+
+      </div>
+    </div>  
+
+
+    <div class="people">
+      
+
+      <div class="people-frs">
+          
+        <div class="people-frs__img">
+          <img src="./persons/departures-1.jpg" alt="">
+        </div>
+        <div class="people-frs__name">Alex</div>
+
+        <div class="people-links"><a href="#!" class="people-links__name">Montereal</a><i class="mx-3 people-links__icon fas fa-arrow-right"></i><a href="#!"class="people-links__name">San Jose</a></div>
+
+      </div>
+
+      <!-- 2222 -->
+
+      <div class="people-frs">
+          
+          <div class="people-frs__img">
+            <img src="./persons/departures-1.jpg" alt="">
+          </div>
+          <div class="people-frs__name">Alex</div>
+  
+          <div class="people-links"><a href="#!" class="people-links__name">Montereal</a><i class="mx-3 people-links__icon fas fa-arrow-right"></i><a href="#!"class="people-links__name">San Jose</a></div>
+  
+        </div>
+
+
+
+        <!-- 2222 -->
+
+
+        <!-- 33333 -->
+        <div class="people-frs">
+          
+            <div class="people-frs__img">
+              <img src="./persons/departures-1.jpg" alt="">
+            </div>
+            <div class="people-frs__name">Alex</div>
+    
+            <div class="people-links"><a href="#!" class="people-links__name">Montereal</a><i class="mx-3 people-links__icon fas fa-arrow-right"></i><a href="#!"class="people-links__name">San Jose</a></div>
+    
+          </div>
+        <!-- 33333 -->
+
+
+<!-- 44444 -->
+<!-- <div class="people-frs">
+          
+    <div class="people-frs__img">
+      <img src="./persons/departures-1.jpg" alt="">
+    </div>
+    <div class="people-frs__name">Alex</div>
+
+    <div class="people-links"><a href="#!" class="people-links__name">Montereal</a><i class="mx-3 people-links__icon fas fa-arrow-right"></i><a href="#!"class="people-links__name">San Jose</a></div>
+
+  </div> -->
+<!-- 44444 -->
+
+
+    </div> <!-- MAINNN PEOPLEEE DIVVV KA CLOSINGGG DIVV HAIII YE -->
+
+
+
+  </div>  <!-- DEPARTURES KA CLOSINGGG DIVVV HAIII-->
+
+
+
+  <div class="both">
+
+
+    <div class="pehla">
+
+<div class="tasveer">
+      <div class="overlay">
+        <div class="overlay__content">
+
+          <div class="overlay__heading">Transporter un colis pour un particulier            </div>
+          <a class="overlay__buttonn" href="#!">Lorem ipsum dolor sit amet.</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="dusra">
+
+        <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+            Add Pagination 
+            <div class="swiper-pagination"></div>
+          </div> -->
+
+
+<div class="cont">
+          <div class="image">
+            <img src="/persons/valerie-small.jpg" alt="">
+          </div>
+          <div class="cont__naam">VOGESEE JWEBI</div>
+
+        </div> <!--CONTTTT KA CLOSINGGG DIVVV HAIII-->
+
+        <div class="second">
+
+          <div class="second__heading">J'ai livré pour vous</div>
+          <div class="second__subhead">J'adore l'idée de rentabiliser mes voyages. Imen a été réactive, ponctuelle et super sympa.</div>
+
+          <div class="another">
+             <span>Valirie</span>
+             <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+             </div>
+          </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+  </div>  <!-- BOTHHHH KA CLOSINGGG DIVVV HAIII YE -->
+
+
+
+  <div class="cities">
+      <div class="trajets">
+        
+          <div class="trajets__image"><img src="./img/icon1111@2x.png" alt=""></div>
+          <div class="trajets__text">Top des trajets            </div>
+  
+        </div>
+
+
+
+
+  <div class="row spots ">
+  
+    <div class=" col-sm-3 bg-danger p-0 pic" >
+      <img src="./cities/Paris - Tunis@2x.png" class="img-fluid pic__img" alt="">
+    </div>
+
+    <div class="col-xl-6 p-0 pic mx-4 check" style="flex: 0 0 47.5%;">
+        <img src="./cities/New York - Paris@2x.png"  class="img-fluid pic__img" alt="">
+      </div>
+
+      <div class=" col-sm-3 bg-danger p-0 pic" >
+          <img src="./cities/Londres - Paris@2x.png" class="img-fluid pic__img" alt="">
+        </div>
+
+      </div>
+        
+<div class="row spots">
+        <div class="col-sm-3  bg-danger p-0 pic" >
+            <img src="./cities/Bordeaux - Toulouse@2x.png" class="img-fluid pic__img" alt="">
+          </div>
+
+          <div class="col-sm-3 bg-danger mx-4 p-0 pic">
+              <img src="./cities/Montral_Casa@2x.png" class="img-fluid pic__img" alt="">
+            </div>
+
+            <div class="col-xl-6 bg-danger p-0 pic check" style="flex: 0 0 47.5%">
+                <img src="./cities/Lille Marseille@2x.png" class="img-fluid pic__img" alt="">
+              </div>
+
+  
+  </div>
+
+
+
+
+
+  </div>    <!-- CTITIESSSSS KA CLOSINGGG DIVVV-->
+
+
+<div class="row faces">
+
+  <div class="f1card">
+
+    <div class="f1card__icon">
+      <img src="./cards/simple.png" class="img-fluid" alt="">
+    </div>
+
+    <h4 class="f1card__heading my-3">Simple & Pratique</h4>
+
+<p class="f1card__text">Contactez les particuliers de votre choix via la messagerie instantanée de Jwebi, envoyer vos colis n’aura jamais été aussi facile !
+
+
+
+</p>
+
+  </div>
+
+  <div class="f1card">
+
+    <div class="f1card__icon">
+      <img src="./cards/m-chers.png" class="img-fluid" alt="">
+    </div>
+
+    <h4 class="f1card__heading my-3">Moins cher
+    </h4>
+
+<p class="f1card__text">Grâce au transport de colis entre particuliers, économisez jusqu’à 70% sur vos frais d’expédition pour vos envois en France et à l’international.
+
+</p>
+
+  </div>
+
+  <div class="f1card">
+
+    <div class="f1card__icon">
+      <img src="./cards/rapide.png" class="img-fluid" alt="">
+    </div>
+
+    <h4 class="f1card__heading my-3">Rapide</h4>
+
+<p class="f1card__text">Pour vos envois urgents, faites appel à des voyageurs dont les trajets ont lieu le jour même ou le lendemain.
+
+
+
+</p>
+
+  </div>
+
+
+
+
+
+</div>      <!-- FACESSSS KA CLOSINGGG DIVVV HAIIII-->
+
+
+<div class="demandes">
+
+
+  <div class="monkey">
+    
+    
+    <div class="monk ">
+      <img src="/img/MonkeyThree@2x.png" class="monk__img img-fluid" alt="">
+    </div>
+
+    <div class="thousand">
+      <div class="thousand__text">Jwebi, c’est déjà plus de</div>
+
+      <div class="thousand__subtext "><span style="font-size: 5rem;font-weight: 700;"> 40 000 </span> <span style="font-size: 3rem;font-weight: 700;"> demandes d’envoi de colis ! </span>      </div>
+    </div>
+  </div>
+
+
+  <div class="row faces" style="background-color: #fff;">     <!-- FACESSSS KA STARTTT AGAINNNN-->
+
+    <div class="f1card f1card--modifier pt-5">
+  
+      <div class="f1card__icon">
+        <img src="./demandes/EFFICACITÉ.png" class="img-fluid" alt="">
+      </div>
+  
+      <h4 class="f1card__heading my-3 f1card__heading--modifier">EFFICACITÉ</h4>
+  
+  <p class="f1card__text">Envoyez vos colis rapidement et à moindre coût grâce au transport de colis entre particuliers.
+
+
+  
+  
+  
+  </p>
+  
+    </div>
+  
+    <div class="f1card f1card--modifier">
+  
+      <div class="f1card__icon">
+        <img src="./demandes/CONFIANCE.png" class="img-fluid" alt="">
+      </div>
+  
+      <h4 class="f1card__heading my-3 f1card__heading--modifier">CONFIANCE
+      </h4>
+  
+  <p class="f1card__text">Faites appel à des particuliers et des transporteurs professionnels avec des profils vérifiés pour une livraison de vos colis en toute sérénité.
+
+
+  
+  </p>
+  
+    </div>
+  
+    <div class="f1card f1card--modifier">
+  
+      <div class="f1card__icon">
+        <img src="./demandes/PAIEMENTS.png" style="width: 40px;" class="img-fluid" alt="">
+      </div>
+  
+      <h4 class="f1card__heading my-3 f1card__heading--modifier">PAIEMENTS SÉCURISÉS
+      </h4>
+  
+  <p class="f1card__text">Un système de paiement sécurisé qui reverse le bonus du voyageur ou du transporteur professionnel après la confirmation de livraison du colis à destination.
+
+
+  
+  
+  
+  </p>
+  
+    </div>
+
+    <div class="f1card f1card--modifier">
+  
+      <div class="f1card__icon">
+        <img src="./demandes/ASSISTANCE.png" class="img-fluid" alt="">
+      </div>
+  
+      <h4 class="f1card__heading f1card__heading--modifier my-3">ASSISTANCE
+      </h4>
+  
+  <p class="f1card__text">Nos équipes sont disponibles pour vous aider. Ecrivez-nous à hello@jwebi.com ou ici
+
+
+
+
+  
+  
+  
+  </p>
+  
+    </div>
+  
+  
+  
+  
+  
+  </div>      <!-- FACESSSS KA CLOSINGGG DIVVV HAIIII-->
+
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small" style="background-color: #071320;padding: 4rem 15rem 5rem 3.5rem;">
+
+  <!-- Footer Links -->
+  <div class=" text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+
+        <ul class="list-unstyled listt">
+          <li class="listt__frs"> 40 000 </li>
+          
+          <li class="listt__sec">Utilisateurs <br> nous font confiance pour : </li>
+
+
+          <li class="listt__thr">
+              <i class="fas fa-check" aria-hidden="true"></i>
+            <span>Envoyer leurs colis en France et à l'international              </span>
+          
+          </li>
+          
+          
+          <li class="listt__thr mt-3">
+              <i class="fas fa-check" aria-hidden="true"></i>
+            <span>Acheter des produits rares ou moins chers ailleurs
+
+              </span>
+          
+          </li>
+
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">A PROPOS DE JWEBI          </h5>
+
+        <ul class="list-unstyled list-2">
+          <li>
+            <a href="#!">Transport de colis entre particulier              </a>
+          </li>
+          <li>
+            <a href="#!">Comment ça marche ?
+              </a>
+          </li>
+          <li>
+            <a href="#!">FAQ</a>
+          </li>
+          <li>
+            <a href="#!">Mentions Légales
+              </a>
+          </li>
+          <li>
+              <a href="#!">Conditions Générales
+
+                </a>
+            </li>
+
+            <li>
+                <a href="#!">Professionnels</a>
+              
+              </li>
+      
+      
+      
+      
+            </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">DÉCOUVRIR          </h5>
+
+        <ul class="list-unstyled list-2">
+          <li>
+            <a href="#!">Envoi colis pas cher
+              </a>
+          </li>
+          <li>
+            <a href="#!">Qui sommes-nous
+              </a>
+          </li>
+          <li>
+            <a href="#!">Presse
+              </a>
+          </li>
+          <li>
+            <a href="#!">Jobs
+              </a>
+          </li>
+
+
+          <li>
+              <a href="#!">Contact
+
+                </a>
+            </li>
+
+            <li>
+                <a href="#!">Blog
+
+                  </a>
+              </li>
+
+
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">DES QUESTIONS ?
+
+          </h5>
+
+        <ul class="list-unstyled list-3">
+          <li>
+            <a href="#!" id="contactez">Contactez-nous</a>
+          </li>
+
+          <h5 class="font-weight-bold text-uppercase">SUIVEZ-NOUS
+            </h5>
+
+          <li id="social">
+            <a href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a href="#!"><i class="fab fa-twitter"></i></a>
+            <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#!"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#!"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+</footer>
+<!-- Footer -->
+
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+
+<!-- SWIPTER -->
+<!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="/hs.js"></script>
+
+<!-- <script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+  });
+</script> -->
+
+
+
+</body>
+</html>
